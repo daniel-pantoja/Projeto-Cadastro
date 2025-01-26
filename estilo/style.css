@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #B4BEC9;
+    --cor1: #159A9C;
+    --cor2: #002333;
+    --cor3: #2fa866;
+    --cor4: #DEEFE7;
+    --cor5: #FFFFFF;
+
+    --fonte-padrãoa: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", serif;
+}
+
+body {
+    font-family: var(--fonte-padrãoa);
+    background-color: var(--cor0);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-padrãoa);
+}
+
+h1 {
+    color: var(--cor5);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-family: var(--fonte-destaque);
+    text-shadow: 2px 2px 0px #0000003b;
+}
+
+h2 {
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor1), transparent);  
+    font-size: calc(1em + 1vw);
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px 0px 15px ;
+}
+
+#btnCadastrar {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+#formulario {
+    background: var(--cor5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0000001a;
+    margin-bottom: 20px;
+    display: none;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+input, textarea, select {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--cor1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9em; 
+}
+button {
+    padding: 12px 20px;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+button:hover {
+    background-color:var(--cor1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-width: 600px;
+    overflow-x: auto; 
+}
+th, td {
+    border: 1px solid var(--cor3);
+    padding: 12px;
+    text-align: left;
+    word-wrap: break-word; 
+    font-size: 0.9em; 
+   background-color: #FFFFFF;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
